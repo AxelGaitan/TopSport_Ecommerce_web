@@ -1,19 +1,13 @@
-Este proyecto es una página web ecommerce desarrollada para la marca Kai, dedicada a la venta de tops deportivos. Arrancó con una base sencilla en HTML y CSS, y fue evolucionando hasta convertirse en un sitio profesional, dinámico, adaptable y conectado a una base de datos local. La idea principal era que el cliente pueda recibir pedidos online, guardarlos en su PC y tener una estructura ordenada para seguir vendiendo desde un solo lugar.
+Este proyecto es una página web ecommerce desarrollada para la marca ABZUS, dedicada a la venta de tops deportivos. Arrancó con una base sencilla en HTML y CSS, y fue evolucionando hasta convertirse en un sitio profesional, dinámico, adaptable y conectado a una base de datos local.
 
-El frontend está hecho en HTML, CSS y JavaScript. Se organizó todo en una estructura clara con secciones para mostrar productos, realizar pedidos, contacto, y navegación fluida entre partes. También se prepararon espacios para imágenes, el logo de la marca y enlaces a redes, que se cargan manualmente desde la carpeta /public/img o directamente en el HTML según el gusto del cliente.
+El frontend está hecho en HTML, CSS y JavaScript. Se organizó todo en una estructura clara con secciones para mostrar productos, realizar pedidos, contacto, y navegación fluida. Se prepararon espacios para imágenes, el logo de la marca y enlaces a redes, que se cargan manualmente desde la carpeta /public/img.
 
-El backend se desarrolló en Node.js usando Express como framework, y la base de datos utilizada es SQLite. Se creó un archivo llamado server.js que recibe los pedidos del formulario, los guarda en una tabla llamada "pedidos" dentro de un archivo local llamado pedidos.db. Se usó body-parser para recibir los datos en formato JSON, y se configuró todo para que al correr el servidor, cualquier persona pueda hacer un pedido y dejar sus datos almacenados.
+El backend se desarrolló en Node.js usando Express, y la base de datos utilizada es SQLite. Se creó un archivo server.js que recibe los pedidos del formulario y los guarda en una tabla llamada "pedidos" dentro del archivo pedidos.db.
 
-Para instalar las dependencias necesarias, primero se descargó Node.js desde su página oficial, se instaló y se verificó con los comandos node -v y npm -v. Luego, dentro de la carpeta raíz del proyecto se ejecutó:
+Para instalar las dependencias:
+npm install
 
-npm install express body-parser sqlite3
-
-Con eso quedó todo listo para correr el proyecto localmente usando:
-
+Para ejecutar el proyecto:
 node server.js
 
-La página queda disponible en http://localhost:3000 desde cualquier navegador.
-
-El código ya está estructurado para subirlo a GitHub y desde ahí, se puede desplegar en plataformas como Render o Railway para tenerlo en línea. Solo hay que subir el repo, conectar la base de datos externa si se quiere persistencia fuera de la PC, y dejarlo corriendo como Web Service.
-
-Todo lo que es diseño, estructura y conexión quedó preparado para que el cliente pueda manejarlo, modificarlo, agregar productos, imágenes, textos y mantener su tienda actualizada sin tener que rehacer nada de cero.
+El sitio se puede ver en http://localhost:3000 o desplegarse en Render conectando este repositorio.
