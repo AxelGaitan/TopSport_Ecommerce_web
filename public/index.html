@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kai - Tops Deportivos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="<!-- PONER AQUÍ FAVICON -->" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <!-- LOGO DE LA MARCA -->
+        <img src="img/logo_kai.png" alt="Kai Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#pedido">Hacer Pedido</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Bienvenido a Kai</h1>
+      <p>Tops deportivos de calidad, comodidad y estilo.</p>
+      <a href="#productos" class="btn">Ver productos</a>
+    </section>
+
+    <section id="productos" class="productos">
+      <h2>Nuestros Tops</h2>
+      <div class="producto-grid">
+        <!-- REPITE ESTE BLOQUE POR PRODUCTO -->
+        <div class="producto">
+          <img src="img/top_blanco.jpg" alt="Top Blanco Kai" />
+          <h3>Top Blanco Kai</h3>
+          <p>$35.000</p>
+          <button class="btn comprar-btn" data-nombre="Top Blanco Kai" data-precio="35000">Comprar</button>
+        </div>
+        <!-- AGREGA MÁS PRODUCTOS AQUÍ -->
+      </div>
+    </section>
+
+    <section id="pedido" class="pedido">
+      <h2>Realizá tu pedido</h2>
+      <form id="pedidoForm">
+        <input type="text" name="nombre" placeholder="Nombre y Apellido" required />
+        <input type="tel" name="telefono" placeholder="Teléfono" required />
+        <input type="text" name="direccion" placeholder="Dirección" required />
+        <input type="text" name="producto" id="productoSeleccionado" placeholder="Producto" readonly />
+        <button type="submit" class="btn">Enviar Pedido</button>
+      </form>
+      <p class="mensaje-exito" id="mensajeExito"></p>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <p>Seguinos en nuestras redes sociales:</p>
+      <!-- AGREGA ENLACES A REDES -->
+      <ul class="redes">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Whatsapp</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kai - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
